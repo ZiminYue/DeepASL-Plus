@@ -3,8 +3,8 @@
 Follow the steps in [the project repository setup instructions](https://moodle.arts.ac.uk/mod/page/view.php?id=1374587) on how to setup the repository for your AI 4 Media mini-project.
 
 
-## Student name:
-## Student number: 
+## Student name: Zimin Yue
+## Student number: 24004556
 ## Project title:
 ## Link to project video recording: 
 
