@@ -7,11 +7,16 @@ import numpy as np
 
 video_capture = cv2.VideoCapture(0)
 
+#Test if camera is opened
 if not video_capture.isOpened():
     print("Cannot access the camera.")
     exit()
 else:
     print("Camera OK.")
+
+# 设置分辨率
+video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 
 
 mediapipe = mp.solutions.hands
@@ -193,7 +198,7 @@ while video_capture:
 
             
             cv2.imshow('Your Gesture', forward_inverse_threshold)
-            cv2.moveWindow("Your Gesture", 100, 100)  # adjust gesture window position  
+            cv2.moveWindow("Your Gesture", 100, 700)  # adjust gesture window position  
             
         
 
@@ -252,7 +257,7 @@ while video_capture:
     analytics_frame = cv2.flip(analytics_frame, 1)
 
 
-    cv2.putText(analytics_frame, "Hit Q to QUIT!", (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 98, 255), 2, cv2.LINE_AA)
+    cv2.putText(analytics_frame, "[Press ESC to exit]", (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 98, 255), 2, cv2.LINE_AA)
     cv2.putText(analytics_frame, "hand_in_frame: {}".format(str(hand_in_frame)), (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
     cv2.putText(analytics_frame, "hand_position_eval: {}".format(hand_position_eval), (10, 80), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
     cv2.putText(analytics_frame, "anchor_distances_avg: {}".format(float(anchor_distances_avg)), (10, 110), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
@@ -276,11 +281,9 @@ while video_capture:
 
     # 在 Analytics 窗口中显示更新后的图像
     cv2.imshow("Analytics", analytics_frame)
-
-
         
         
-    if cv2.waitKey(25) == ord('q'):
+    if cv2.waitKey(25) == 27:
             break
 
 video_capture.release()
