@@ -111,3 +111,6 @@ def test():
         100. * correct / len(test_loader.dataset)))
 
 test()
+
+# 保存训练好的模型
+#torch.save(model.state_dict(), 'gettyHands.pth')
