@@ -12,22 +12,23 @@ import numpy as np
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.conv1 = nn.Conv2d(1, 32, kernel_size=3)
-        self.conv2 = nn.Conv2d(32, 64, kernel_size=3)
-        self.conv3 = nn.Conv2d(64, 128, kernel_size=3)
-        self.fc1 = nn.Linear(1152, 128)
+        self.conv1 = nn.Conv2d(1, 16, kernel_size=3)
+        self.conv2 = nn.Conv2d(16, 32, kernel_size=3)
+        self.fc1 = nn.Linear(32 * 5 * 5, 128)
         self.fc2 = nn.Linear(128, 36)
 
     def forward(self, x):
         x = F.relu(self.conv1(x))
         x = F.max_pool2d(x, 2)
-        
+        print(x.shape)
+
         x = F.relu(self.conv2(x))
         x = F.max_pool2d(x, 2)
+        print(x.shape)
 
-        x = F.relu(self.conv3(x))
 
         x = x.view(x.size(0), -1)  # 展平操作
+        print(x.shape)
         
         x = F.relu(self.fc1(x))
         x = self.fc2(x)
@@ -271,6 +272,7 @@ while video_capture:
                     
                 # 确保是 float 类型
                 forward_inverse_threshold_resized = forward_inverse_threshold_resized.float()
+            
                 net_softmax_output = model(forward_inverse_threshold_resized)
                 # net_softmax_output_list = net_softmax_output.tolist()
                # 转换为概率值
