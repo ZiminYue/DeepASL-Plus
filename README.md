@@ -5,7 +5,7 @@ Follow the steps in [the project repository setup instructions](https://moodle.a
 
 ## Student name: Zimin Yue
 ## Student number: 24004556
-## Project title:
+## Project title: DeepASL Plus
 ## Link to project video recording: 
 
 # Setup instructions:
