@@ -12,7 +12,7 @@ Follow the steps in [the project repository setup instructions](https://moodle.a
 
 Instructions for setting up the conda environment, any files that need downloading, and the specific technical instructions for how to run your code project go here:
 
-# Place the `.streamlit` folder and `streamlitImage` folder in your home directory
+### Place the `.streamlit` folder and `streamlitImage` folder in your home directory
 
 On Windows:
 Place the `.streamlit` folder and `streamlitImage` folder in:
