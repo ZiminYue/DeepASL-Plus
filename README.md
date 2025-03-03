@@ -14,6 +14,14 @@ Instructions for setting up the conda environment, any files that need downloadi
 
 ```
 CLI instructions should go in a code block like this
+
+On Windows:
+Place the config.toml file in:
+C:\Users\<YourUsername>\.streamlit\config.toml
+
+On macOS/Linux:
+Place the config.toml file in:
+~/.streamlit/config.toml
 ```
 
 
