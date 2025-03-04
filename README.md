@@ -18,9 +18,10 @@ This project requires the `terminal` or `command prompt` (the program `Anaconda 
 
 (1) Download and install `Anaconda` from https://www.anaconda.com/download/success
 
-(2) Open the software program `terminal` (on Mac) or `anaconda prompt` (on Windows).
+(2) Open the software program `anaconda prompt` (on Windows) or `terminal` (on Mac).
 
-(3) Navigate to `C:\Users\<YourUsername>\` folder and run the following commands, one after the other:
+(3) Navigate to `C:\Users\<YourUsername>\` (on Windows) `/Users/<YourUsername>/`(on Mac) `/home/<YourUsername>/` (On Linux)
+folder and run the following commands, one after the other:
 
 ```
 conda create --name aim python=3.10
@@ -34,7 +35,7 @@ pip install ipython jupyter
 
 ### 2. Installing the libraries
 
-In the `terminal` (on Mac) or `anaconda prompt` (on Windows), run the code:
+In the `anaconda prompt` (on Windows) or `terminal` (on Mac), run the code:
 `%pip install -r requirements.txt`
 
 ### 3. Place the `.streamlit` folder and `streamlitImage` folder in your home directory
@@ -43,7 +44,7 @@ On Windows:
 Place the `.streamlit` folder and `streamlitImage` folder in:
 `C:\Users\<YourUsername>\`
 
-On macOS:
+On Mac:
 `/Users/<YourUsername>/`
 
 On Linux:
