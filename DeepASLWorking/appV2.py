@@ -4,11 +4,10 @@ import math
 import statistics
 import torch
 import torch.nn as nn
-# import net_init
 import torch.nn.functional as F
 import numpy as np
 
-# 定义你的神经网络架构
+# Define neural network architecture
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
@@ -27,14 +26,13 @@ class Net(nn.Module):
         print(x.shape)
 
 
-        x = x.view(x.size(0), -1)  # 展平操作
+        x = x.view(x.size(0), -1)  
         print(x.shape)
         
         x = F.relu(self.fc1(x))
         x = self.fc2(x)
         return F.log_softmax(x, dim=1)
 
-# 创建模型实例
 model = Net()
 
 video_capture = cv2.VideoCapture(0)
@@ -46,7 +44,7 @@ if not video_capture.isOpened():
 else:
     print("Camera OK.")
 
-# 设置分辨率
+# set the resolution
 video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
 video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 
@@ -261,34 +259,33 @@ while video_capture:
         
         
                 # net_softmax_output = net_init.trained_forward_propagation(forward_inverse_threshold_resized)
-                # 确保输入数据是一个 4D Tensor
-                if len(forward_inverse_threshold_resized.shape) == 2:  # 2D -> 28x28 图像
-                    forward_inverse_threshold_resized = torch.tensor(forward_inverse_threshold_resized).unsqueeze(0)  # 增加批次维度 [1, 28, 28]
-                    forward_inverse_threshold_resized = forward_inverse_threshold_resized.unsqueeze(0)  # 增加通道维度 [1, 1, 28, 28] (单通道)
+                # Make sure the input is a 4D Tensor
+                if len(forward_inverse_threshold_resized.shape) == 2:  # 2D -> 28x28 picture
+                    forward_inverse_threshold_resized = torch.tensor(forward_inverse_threshold_resized).unsqueeze(0)  
+                    forward_inverse_threshold_resized = forward_inverse_threshold_resized.unsqueeze(0)  
 
-                # 如果是多张图像，形状为 [batch_size, 28, 28]，可以直接转换为 [batch_size, 1, 28, 28]
-                elif len(forward_inverse_threshold_resized.shape) == 3:  # 多张图像
+                # If there are multiple pictures with shape [batch_size, 28, 28] can be transfer to [batch_size, 1, 28, 28]
+                elif len(forward_inverse_threshold_resized.shape) == 3:  # multiple images
                     forward_inverse_threshold_resized = torch.tensor(forward_inverse_threshold_resized).unsqueeze(1)  # [batch_size, 1, 28, 28]
                     
-                # 确保是 float 类型
+                # Make sure it's float
                 forward_inverse_threshold_resized = forward_inverse_threshold_resized.float()
             
                 net_softmax_output = model(forward_inverse_threshold_resized)
                 # net_softmax_output_list = net_softmax_output.tolist()
-               # 转换为概率值
+               
                 net_softmax_output_list = F.softmax(net_softmax_output, dim=1).detach().cpu().numpy().flatten()
 
-                print("Softmax output list: ", net_softmax_output_list)  # 打印输出列表
+                print("Softmax output list: ", net_softmax_output_list)  # print output list
 
-                # 确保列表非空并且有正确的元素
+                # Make sure the list is not empty and has the correct elements
                 if len(net_softmax_output_list) > 0:
-                    # 取出最大概率的索引
                     predicted_class = np.argmax(net_softmax_output_list)
                     print(f"Predicted class: {predicted_class} with confidence: {net_softmax_output_list[predicted_class]:.2%}")
                 else:
                     print("The softmax output list is empty!")
 
-                # 假设 softmax_translation 是一个将索引转换为类别名称的函数
+                # Assume "softmax_translation" is a function that converts indexes to category names
                 net_output_translation = str(softmax_translation(predicted_class))
                 print("Translated output: ", net_output_translation)
 
@@ -330,18 +327,18 @@ while video_capture:
 
 
    
-    # 获取屏幕分辨率
-    screen_width = 1920  # 屏幕宽度
-    screen_height = 1080  # 屏幕高度
+    # Get screen resolution
+    screen_width = 1920  
+    screen_height = 1080  
 
 
-    # 创建窗口并设置为全屏
-    cv2.namedWindow("Analytics", cv2.WND_PROP_FULLSCREEN)
-    cv2.setWindowProperty("Analytics", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
-    
+    # Create window and set it full screen
+    cv2.namedWindow("Webcam Feed", cv2.WND_PROP_FULLSCREEN)
+    cv2.setWindowProperty("Webcam Feed", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+            
 
-    # 在 Analytics 窗口中显示更新后的图像
-    cv2.imshow("Analytics", analytics_frame)
+    # Show real-time frames captured with webcam in "Webcam Feed" window
+    cv2.imshow("Webcam Feed", analytics_frame)
         
         
     if cv2.waitKey(25) == 27:
