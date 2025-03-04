@@ -9,11 +9,9 @@ datasets
 tiktoken 
 onnxruntime
 Pillow
-imageio
 ultralytics
-scikit-learn
-scikit-image
 acids-rave
 open_clip_torch
 streamlit-drawable-canvas
 mediapipe
+numpy
