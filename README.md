@@ -32,7 +32,12 @@ conda activate aim
 pip install ipython jupyter
 ```
 
-### 2. Place the `.streamlit` folder and `streamlitImage` folder in your home directory
+### 2. Installing the libraries
+
+In the `terminal` (on Mac) or `anaconda prompt` (on Windows), run the code:
+`%pip install -r requirements.txt`
+
+### 3. Place the `.streamlit` folder and `streamlitImage` folder in your home directory
 
 On Windows:
 Place the `.streamlit` folder and `streamlitImage` folder in:
