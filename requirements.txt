@@ -3,7 +3,6 @@ torchvision
 torchtext
 streamlit
 opencv-python
-acids-rave
 streamlit-drawable-canvas
 mediapipe
 numpy
