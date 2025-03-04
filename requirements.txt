@@ -1,17 +1,9 @@
 torch
 torchvision
-torchaudio
 torchtext
 streamlit
 opencv-python
-transformers
-datasets 
-tiktoken 
-onnxruntime
-Pillow
-ultralytics
 acids-rave
-open_clip_torch
 streamlit-drawable-canvas
 mediapipe
 numpy
