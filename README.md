@@ -42,15 +42,15 @@ In the `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac), run the co
 
 ### 3. Place the `.streamlit` folder and `streamlitImage` folder in your home directory
 
-On Windows:
-Place the `.streamlit` folder and `streamlitImage` folder in:
-`C:\Users\<YourUsername>\`
 
-On Mac:
-`/Users/<YourUsername>/`
+Place the `.streamlit` folder and `streamlitImage` folder in
+`C:\Users\<YourUsername>\`(on Windows)
 
-On Linux:
-`/home/<YourUsername>/`
+
+`/Users/<YourUsername>/`(on Mac)
+
+
+`/home/<YourUsername>/`(on Linux)
 
 ```
 CLI instructions should go in a code block like this
