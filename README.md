@@ -13,10 +13,15 @@ Follow the steps in [the project repository setup instructions](https://moodle.a
 Instructions for setting up the conda environment, any files that need downloading, and the specific technical instructions for how to run your code project go here:
 
 ### 1. Set up a conda environment
+
 This project requires the `terminal` or `command prompt` (the program `Anaconda Command Prompt` on Windows).
+
 (1)Download and install `Anaconda` from https://www.anaconda.com/download/success
+
 (2)Open the software program `terminal` (on Mac) or `anaconda prompt` (on Windows).
+
 (3)Navigate to this folder and run the following commands, one after the other:
+
 ```
 conda create --name aim python=3.10
 ```
