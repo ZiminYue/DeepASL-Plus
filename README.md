@@ -39,8 +39,9 @@ pip install ipython jupyter
 In the `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac), run the code:
 `%pip install -r requirements.txt`
 
+### 3. Download the folder from github
 
-### 3. Place the `.streamlit` folder and `streamlitImage` folder in your home directory
+### 4. Place the `.streamlit` folder and `streamlitImage` folder in your home directory
 
 
 Place the `.streamlit` folder and `streamlitImage` folder in
