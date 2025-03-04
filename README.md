@@ -16,11 +16,11 @@ Instructions for setting up the conda environment, any files that need downloadi
 
 This project requires the `terminal` or `command prompt` (the program `Anaconda Command Prompt` on Windows).
 
-(1)Download and install `Anaconda` from https://www.anaconda.com/download/success
+(1) Download and install `Anaconda` from https://www.anaconda.com/download/success
 
-(2)Open the software program `terminal` (on Mac) or `anaconda prompt` (on Windows).
+(2) Open the software program `terminal` (on Mac) or `anaconda prompt` (on Windows).
 
-(3)Navigate to this folder and run the following commands, one after the other:
+(3) Navigate to `C:\Users\<YourUsername>\` folder and run the following commands, one after the other:
 
 ```
 conda create --name aim python=3.10
