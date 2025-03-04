@@ -29,7 +29,7 @@ st.markdown("Image Source: _https://www.researchgate.net/figure/The-26-letters-a
 
 st.divider()
 
-st.subheader("🧐How did :orange[ASL] develop?")
+st.subheader("🧐How was :orange[ASL] developed?")
 st.caption("American Sign Language (ASL) developed in the early 19th century at the American School for the Deaf (ASD), which was founded in 1817 by Thomas Gallaudet. The language emerged from a unique blend of different signing systems, particularly Old French Sign Language (LSF, from langue des signes française), various village sign languages, and home sign systems brought by the diverse group of students attending the school. This language contact between multiple signing traditions played a crucial role in the creation of ASL.")
 
 st.image("./streamlitImage/ASLhistory.jpg", caption="Deaf and dumb children of St. Rica's School, Cincinnati, singing the Star Spangled Banner with sign language, 1918.", use_column_width=True)
