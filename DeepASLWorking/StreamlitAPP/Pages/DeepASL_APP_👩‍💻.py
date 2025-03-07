@@ -16,22 +16,43 @@ st.sidebar.markdown("# About the DeepASL App 🧏")
 st.sidebar.caption("The DeepASL App is an updated version of the DeepASL project, featuring a new dataset, a new model trained with Convolutional Neural Networks (CNNs), an extended vocabulary, and a user interface built with Streamlit.")
 st.subheader(":rainbow[Follow the instructions to do a real-time ASL now!]")
 
+#1st paragraph
+
 st.divider()
 
 st.subheader("🙋Instructions")
 st.caption("Note: This app would like to use your webcam 📷")
 st.markdown("1. When ready, click on :orange[the button] down below to launch the app.")
 st.markdown("2. The app will check if your camera 📷 is accessible. If not, please enable it!😉")
-st.markdown("3. When the app launches, :violet[a full-screen window] will pop up displaying your webcam feed with some further instruction texts.")
-st.markdown("4. Ta-da! You can start gesturing with :blue[one hand] now! 🤟 :violet[Another window] with analytics of your hand will show up on the bottom left.")
-st.markdown("5. An interpretation of :blue[the letter (A-Z) or number (0-9)] you gesture will be seen on the screen. :rainbow[Are you gesturing them correctly? Or is the app recognising them correctly?]🤔")
-st.markdown("6. When finished, press :orange[ESC] to exit.")
-st.markdown("7. If you'd like to try again, just click :orange[the button] once again!😉")
+st.markdown("3. When the app launches, :violet[a full-screen window] displaying your webcam feed will emerge in the toolbar. (You may need to wait for a while till it shows up!)")
+st.markdown("4. After :violet[the new window] shows up in the toolbar, minimize your browser to see it.")
+st.markdown("5. Ta-da! You can start gesturing with :blue[one hand] now! 🤟 :violet[Another window] with analytics of your hand will show up on the bottom left.")
+st.markdown("6. An interpretation of :blue[the letter (A-Z) or number (0-9)] you gesture will be seen on the screen. :rainbow[Are you gesturing them correctly? Or is the app recognising them correctly?]🤔")
+st.markdown("7. When finished, press :orange[ESC] to exit.")
+st.markdown("8. If you'd like to try again, just click :orange[the button] once again!😉")
+
+#2nd paragraph
+st.divider()
+
+st.subheader("👩🏻‍🔧Known Issues & Resolutions")
+st.markdown("**· :violet[The Gesture window] gets blocked by :violet[the full-screen Webcam window]?**")
+st.caption("This often occurs when :blue[you get your hand captured by the webcam once] before switching to :violet[the full-screen window]. ")
+st.markdown("***Suggested solution***: :blue-background[Exit and relaunch the app], then switch to :violet[the full-screen window] by :blue-background[clicking on :orange[the icon in the toolbar]] or :blue-background[minimize your browser] before :blue[showing any hands to the webcam].")
+st.subheader(" ")
+st.markdown("**· :violet[The windows] shut down unexpectedly when :blue[gesturing]?**")
+st.caption("When this happens, the error message shown in :violet[the terminal] can be different. ")
+st.markdown("***Suggested solution***: Click on :orange[the button] again to :blue-background[relaunch the app]. If the app failed to launch, you'll need to :blue-background[relaunch the entire Streamlit app with your :violet[terminal]].")
+st.subheader(" ")
+st.markdown("**· The interpretation result always stays the same, even if I :blue[changed my gesture]?**")
+st.caption("This sometimes occurs, due to an unknown reason Xd")
+st.markdown("***Suggested solution***: :blue-background[Exit and relaunch the app].")
+
+#3rd paragraph
 
 st.divider()
 
 st.subheader("👋ASL Gesture Guide")
-st.image("./streamlitImage/ASL26Letter10Digit.png", caption="You can check with the picture before you start!", use_container_width=True)
+st.image("./streamlitImage/ASL26Letter10Digit.png", caption="You can check with this picture before you start!", use_container_width=True)
 st.markdown("👇Ready? Let's go!")
 
 video_capture = cv2.VideoCapture(0)
@@ -357,15 +378,16 @@ if st.button("Launch the App"):
             analytics_frame = cv2.flip(analytics_frame, 1)
 
 
-            cv2.putText(analytics_frame, "[Press ESC to exit]", (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 98, 255), 2, cv2.LINE_AA)
-            cv2.putText(analytics_frame, "hand_in_frame: {}".format(str(hand_in_frame)), (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
-            cv2.putText(analytics_frame, "hand_position_eval: {}".format(hand_position_eval), (10, 80), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
-            cv2.putText(analytics_frame, "anchor_distances_avg: {}".format(float(anchor_distances_avg)), (10, 110), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
-            cv2.putText(analytics_frame, "hand_centroid_velocity: {}".format(hand_centroid_velocity), (10, 140), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
-            cv2.putText(analytics_frame, "net_testing: {}".format(net_testing), (10, 170), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
-            cv2.putText(analytics_frame, "net_output_translation: {}".format(net_output_translation), (10, 200), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
-            cv2.putText(analytics_frame, "net_output_translation_confidence: {}".format(net_output_translation_confidence), (10, 230), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
-            cv2.putText(analytics_frame, "{}".format(net_output_translation), (10, 600), cv2.FONT_HERSHEY_SIMPLEX, 10, (0, 0, 255), 5, cv2.LINE_AA)
+            cv2.putText(analytics_frame, "Welcome to the DeepASL interpretation zone, you can start gesturing now!   NOTE: press ESC to exit :3", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (150, 64, 219), 2, cv2.LINE_AA)
+            cv2.putText(analytics_frame, "Check if there's a hand detected: {}".format(str(hand_in_frame)), (10, 70), cv2.FONT_HERSHEY_SIMPLEX, 1, (99, 64, 219), 2, cv2.LINE_AA)
+            cv2.putText(analytics_frame, "Check if your hand's position is OK: {}".format(hand_position_eval), (10, 110), cv2.FONT_HERSHEY_SIMPLEX, 1, (99, 64, 219), 2, cv2.LINE_AA)
+            # These 4 lines are not necessary for common users to see↓
+            # cv2.putText(analytics_frame, "anchor_distances_avg: {}".format(float(anchor_distances_avg)), (10, 120), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
+            # cv2.putText(analytics_frame, "hand_centroid_velocity: {}".format(hand_centroid_velocity), (10, 150), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
+            # cv2.putText(analytics_frame, "net_testing: {}".format(net_testing), (10, 180), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
+            # cv2.putText(analytics_frame, "net_output_translation: {}".format(net_output_translation), (10, 210), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
+            cv2.putText(analytics_frame, "Confidence in the prediction of your gesture: {}".format(net_output_translation_confidence), (10, 150), cv2.FONT_HERSHEY_SIMPLEX, 1, (99, 64, 219), 2, cv2.LINE_AA)
+            cv2.putText(analytics_frame, "{}".format(net_output_translation), (170, 450), cv2.FONT_HERSHEY_SIMPLEX, 10, (0, 0, 255), 5, cv2.LINE_AA)
 
 
         
@@ -391,8 +413,3 @@ if st.button("Launch the App"):
         #Applicaiton ends here↑
 
         st.success("Well done! You've just experienced real-time ASL interpretation powered by AI!👏")
-
-
-
-
-
