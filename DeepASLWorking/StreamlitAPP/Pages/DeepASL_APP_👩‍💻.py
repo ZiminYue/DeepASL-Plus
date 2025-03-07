@@ -63,15 +63,15 @@ if st.button("Launch the App"):
             def forward(self, x):
                 x = F.relu(self.conv1(x))
                 x = F.max_pool2d(x, 2)
-                print(x.shape)
+                # print(x.shape)
 
                 x = F.relu(self.conv2(x))
                 x = F.max_pool2d(x, 2)
-                print(x.shape)
+                # print(x.shape)
 
 
                 x = x.view(x.size(0), -1) 
-                print(x.shape)
+                # print(x.shape)
                 
                 x = F.relu(self.fc1(x))
                 x = self.fc2(x)
@@ -319,18 +319,18 @@ if st.button("Launch the App"):
                         
                         net_softmax_output_list = F.softmax(net_softmax_output, dim=1).detach().cpu().numpy().flatten()
 
-                        print("Softmax output list: ", net_softmax_output_list)  # print the list
+                        # print("Softmax output list: ", net_softmax_output_list)  # print the list
 
                         # Make sure the list is not empty and has the correct elements
                         if len(net_softmax_output_list) > 0:
                             predicted_class = np.argmax(net_softmax_output_list)
-                            print(f"Predicted class: {predicted_class} with confidence: {net_softmax_output_list[predicted_class]:.2%}")
+                            # print(f"Predicted class: {predicted_class} with confidence: {net_softmax_output_list[predicted_class]:.2%}")
                         else:
                             print("The softmax output list is empty!")
 
                         # Assume "softmax_translation" is a function that converts indexes to category names
                         net_output_translation = str(softmax_translation(predicted_class))
-                        print("Translated output: ", net_output_translation)
+                        # print("Translated output: ", net_output_translation)
 
                         net_output_translation_confidence = "{:.2%}".format(net_softmax_output_list[np.argmax(net_softmax_output_list)])              
                         net_testing = False
