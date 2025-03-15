@@ -42,7 +42,7 @@ pip install ipython jupyter
 ```
 cd <path-to-your-download>/AI-4-Media-Project-Zimin-Yue
 ```
-(replace <path-to-your-download> with the actual path where you downloaded the project)
+(replace `<path-to-your-download>` with the actual path where you downloaded the project)
 
 
 ### 3. Install the required libraries
@@ -82,9 +82,10 @@ If the images are not loading correctly, please run:
 ```
 cd "<path-to-your-download>/AI-4-Media-Project-Zimin-Yue-main/DeepASL_Plus/StreamlitAPP/"
 ```
-(replace <path-to-your-download> with the actual path where you downloaded the project)
+(replace `<path-to-your-download>` with the actual path where you downloaded the project)
+
 Launch the app:
 ```
 streamlit run "<path-to-your-download>/AI-4-Media-Project-Zimin-Yue/DeepASL_Plus/StreamlitAPP/Welcome_to_DeepASL_Plus_🤟.py"
 ```
-(replace <path-to-your-download> with the actual path where you downloaded the project)
+(replace `<path-to-your-download>` with the actual path where you downloaded the project)
