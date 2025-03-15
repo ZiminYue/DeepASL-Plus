@@ -66,13 +66,9 @@ Place the `.streamlit` folder and `streamlitImage` folder in
 
 (2) Run the following commands, one after the other:
 ```
-cd /path/to/AI-4-Media-Project-Zimin-Yue
-```
-(replace </path/to/> with the actual path where you downloaded the project)
-```
 conda activate aim
 ```
 ```
-streamlit run StreamlitAPP/Welcome_to_DeepASL_Plus.py
+streamlit run "<path-to-your-download>/AI-4-Media-Project-Zimin-Yue/DeepASL_Plus/StreamlitAPP/Welcome_to_DeepASL_Plus_🤟.py"
 ```
-
+(replace <path-to-your-download> with the actual path where you downloaded the project)
