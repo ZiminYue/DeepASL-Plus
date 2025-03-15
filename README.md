@@ -38,7 +38,6 @@ You can clone the repository using GitHub Desktop or by running the following co
 ```
 git clone https://git.arts.ac.uk/24004556/AI-4-Media-Project-Zimin-Yue
 cd AI-4-Media-Project-Zimin-Yue
-
 ```
 
 ### 4. Install the Required Libraries
@@ -46,7 +45,6 @@ Run the following commands in `Anaconda Command Prompt` (on Windows) or `termina
 
 ```
 pip install -r requirements.txt
-
 ```
 
 
