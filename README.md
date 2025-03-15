@@ -10,7 +10,9 @@ Follow the steps in [the project repository setup instructions](https://moodle.a
 
 # Setup instructions:
 
-⚠IMPORTANT: Due to compatibility issues with OpenCV's fullscreen window handling on macOS, the main function of the application could not run successfully during testing on macOS systems. However, you can still view the Streamlit interface by following the steps below.
+⚠IMPORTANT: Due to compatibility issues with OpenCV's fullscreen window handling on macOS, the main function of the application could not run successfully during testing on macOS systems. However, you can still view the Streamlit interface by following the steps below. 
+
+The project can run successlfully on Windows.
 
 ### 1. Set up a conda environment
 
