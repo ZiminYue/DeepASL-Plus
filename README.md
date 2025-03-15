@@ -10,7 +10,7 @@ Follow the steps in [the project repository setup instructions](https://moodle.a
 
 # Setup instructions:
 
-⚠IMPORTANT: Due to, the main app during the test.
+⚠IMPORTANT: Due to compatibility issues with OpenCV's fullscreen window handling on macOS, the main function of the application could not run successfully during testing on macOS systems. However, you can still view the Streamlit interface by following the steps below.
 
 ### 1. Set up a conda environment
 
@@ -70,10 +70,19 @@ On macOS, you can reveal hidden files by pressing `Command + Shift + .`.
 
 (1) Open the software program `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac).
 
-(2) Run the following commands, one after the other:
+(2) Run the following command. 
+Basically, you will be able to launch the app only with the last command below. However, if you are trying to rerun the app after closing the terminal, or if images are not loading correctly, please run the following commands in this order:
+
+If the terminal command is not starting with `(aim)`, please run:
 ```
 conda activate aim
 ```
+If the images are not loading correctly, please run:
+```
+cd "<path-to-your-download>/AI-4-Media-Project-Zimin-Yue-main/DeepASL_Plus/StreamlitAPP/"
+```
+(replace <path-to-your-download> with the actual path where you downloaded the project)
+Launch the app:
 ```
 streamlit run "<path-to-your-download>/AI-4-Media-Project-Zimin-Yue/DeepASL_Plus/StreamlitAPP/Welcome_to_DeepASL_Plus_🤟.py"
 ```
