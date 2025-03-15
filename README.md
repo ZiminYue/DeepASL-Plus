@@ -45,7 +45,7 @@ cd <path-to-your-download>/AI-4-Media-Project-Zimin-Yue
 (replace <path-to-your-download> with the actual path where you downloaded the project)
 
 
-### 3. Install the Required Libraries
+### 3. Install the required libraries
 
 Run the following command in `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac):
 
