@@ -60,7 +60,7 @@ Place the `.streamlit` folder and `streamlitImage` folder in
 
 ❗If the `.streamlit` folder is invisible:
 
-On Windows, make sure to enable "Hidden items" in `File Explorer` by checking the `Hidden items` box under the `View` tab.
+On Windows, make sure to enable `Hidden items` in `File Explorer` by checking the `Hidden items` box under the `View` tab.
 
 On macOS, you can reveal hidden files by pressing `Command + Shift + .`.
 
