@@ -10,7 +10,7 @@ Follow the steps in [the project repository setup instructions](https://moodle.a
 
 # Setup instructions:
 
-Instructions for setting up the conda environment, any files that need downloading, and the specific technical instructions for how to run your code project go here:
+⚠IMPORTANT: Due to, the main app during the test.
 
 ### 1. Set up a conda environment
 
