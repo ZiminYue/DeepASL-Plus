@@ -33,15 +33,24 @@ conda activate aim
 pip install ipython jupyter
 ```
 
+### 3. Clone this repository
+You can clone the repository using GitHub Desktop or by running the following command in your terminal:
+```
+git clone https://git.arts.ac.uk/24004556/AI-4-Media-Project-Zimin-Yue
+cd AI-4-Media-Project-Zimin-Yue
 
-### 2. Installing the libraries
+```
 
-In the `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac), run the code:
-`%pip install -r requirements.txt`
+### 4. Install the Required Libraries
+Run the following commands in `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac):
 
-### 3. Download the folder from github
+```
+pip install -r requirements.txt
 
-### 4. Place the `.streamlit` folder and `streamlitImage` folder in your home directory
+```
+
+
+### 5. Place the `.streamlit` folder and `streamlitImage` folder in your home directory
 
 
 Place the `.streamlit` folder and `streamlitImage` folder in
@@ -53,10 +62,18 @@ Place the `.streamlit` folder and `streamlitImage` folder in
 
 `/home/<YourUsername>/`(on Linux)
 
+
+### 6. Run DeepASL Plus on your computer!
+(1) Open the software program `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac).
+
+(2) Run the following commands, one after the other:
 ```
-CLI instructions should go in a code block like this
-
-
+cd /path/to/AI-4-Media-Project-Zimin-Yue
 ```
-
+```
+conda activate aim
+```
+```
+streamlit run StreamlitAPP/Welcome_to_DeepASL_Plus.py
+```
 
