@@ -20,7 +20,7 @@ This project requires the `terminal` or `command prompt` (the program `Anaconda 
 
 (2) Open the software program `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac).
 
-(3) Navigate to `C:\Users\<YourUsername>\` (on Windows) `/Users/<YourUsername>/`(on Mac) `/home/<YourUsername>/` (On Linux)
+(3) Navigate to `C:\Users\<YourUsername>\` (on Windows) `/Users/<YourUsername>/`(on Mac) 
 folder and run the following commands, one after the other:
 
 ```
@@ -33,35 +33,39 @@ conda activate aim
 pip install ipython jupyter
 ```
 
-### 3. Clone this repository
-You can clone the repository using GitHub Desktop or by running the following command in your terminal:
-```
-git clone https://git.arts.ac.uk/24004556/AI-4-Media-Project-Zimin-Yue
-cd AI-4-Media-Project-Zimin-Yue
-```
+### 2. Clone this repository
 
-### 4. Install the Required Libraries
-Run the following commands in `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac):
+(1) You can clone the repository with GitHub Desktop or download ZIP (remember to extract the files!).  
+
+(2) Run the following command in your `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac):
+```
+cd <path-to-your-download>/AI-4-Media-Project-Zimin-Yue
+```
+(replace <path-to-your-download> with the actual path where you downloaded the project)
+
+
+### 3. Install the Required Libraries
+
+Run the following command in `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac):
 
 ```
 pip install -r requirements.txt
 ```
 
 
-### 5. Place the `.streamlit` folder and `streamlitImage` folder in your home directory
-
+### 4. Place the `.streamlit` folder and `streamlitImage` folder in your home directory
 
 Place the `.streamlit` folder and `streamlitImage` folder in
 `C:\Users\<YourUsername>\`(on Windows)
-
-
 `/Users/<YourUsername>/`(on Mac)
 
+❗If the `.streamlit` folder is invisible:
+On Windows, make sure to enable "Hidden items" in `File Explorer` by checking the `Hidden items` box under the `View` tab.
+On macOS, you can reveal hidden files by pressing `Command + Shift + .`.
 
-`/home/<YourUsername>/`(on Linux)
 
+### 5. Run DeepASL Plus on your computer!
 
-### 6. Run DeepASL Plus on your computer!
 (1) Open the software program `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac).
 
 (2) Run the following commands, one after the other:
