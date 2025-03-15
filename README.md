@@ -70,6 +70,7 @@ Place the `.streamlit` folder and `streamlitImage` folder in
 ```
 cd /path/to/AI-4-Media-Project-Zimin-Yue
 ```
+(replace </path/to/> with the actual path where you downloaded the project)
 ```
 conda activate aim
 ```
