@@ -70,7 +70,8 @@ On macOS, you can reveal hidden files by pressing `Command + Shift + .`.
 
 (1) Open the software program `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac).
 
-(2) Run the following command. 
+(2) Run the following command.
+
 Basically, you will be able to launch the app only with the last command below. However, if you are trying to rerun the app after closing the terminal, or if images are not loading correctly, please run the following commands in this order:
 
 If the terminal command is not starting with `(aim)`, please run:
