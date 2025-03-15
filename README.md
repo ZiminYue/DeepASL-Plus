@@ -56,11 +56,12 @@ pip install -r requirements.txt
 ### 4. Place the `.streamlit` folder and `streamlitImage` folder in your home directory
 
 Place the `.streamlit` folder and `streamlitImage` folder in
-`C:\Users\<YourUsername>\`(on Windows)
-`/Users/<YourUsername>/`(on Mac)
+`C:\Users\<YourUsername>\`(on Windows) or `/Users/<YourUsername>/`(on Mac)
 
 ❗If the `.streamlit` folder is invisible:
+
 On Windows, make sure to enable "Hidden items" in `File Explorer` by checking the `Hidden items` box under the `View` tab.
+
 On macOS, you can reveal hidden files by pressing `Command + Shift + .`.
 
 
