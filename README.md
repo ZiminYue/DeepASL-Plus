@@ -42,7 +42,7 @@ pip install ipython jupyter
 
 (2) Run the following command in your `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac):
 ```
-cd <path-to-your-download>/AI-4-Media-Project-Zimin-Yue
+cd "<path-to-your-download>/AI-4-Media-Project-Zimin-Yue"
 ```
 (replace `<path-to-your-download>` with the actual path where you downloaded the project)
 
