@@ -6,7 +6,7 @@ Follow the steps in [the project repository setup instructions](https://moodle.a
 ## Student name: Zimin Yue
 ## Student number: 24004556
 ## Project title: DeepASL Plus
-## Link to project video recording: https://ual.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a8907bb5-c29f-4c8a-b9d9-b2a3001efd5a
+## Link to project video recording: https://ual.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=88dbc0d0-4ecd-476e-81ba-b2a300c59092
 
 # Setup instructions:
 
