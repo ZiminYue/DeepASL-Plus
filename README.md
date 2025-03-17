@@ -35,7 +35,7 @@ conda activate aim
 pip install ipython jupyter
 ```
 
-
+#
 ### 2. Clone this repository
 
 (1) You can clone the repository with GitHub Desktop or download ZIP (remember to extract the files!).  
@@ -48,6 +48,7 @@ cd "<path-to-your-download>/AI-4-Media-Project-Zimin-Yue"
 
 ❗All necessary files, including the model, are included in the repository and will be downloaded automatically when cloning.
 
+#
 ### 3. Install the required libraries
 
 Run the following command in `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac):
@@ -56,7 +57,7 @@ Run the following command in `Anaconda Command Prompt` (on Windows) or `terminal
 pip install -r requirements.txt
 ```
 
-
+#
 ### 4. Place the `.streamlit` folder and `streamlitImage` folder in your home directory
 
 Place the `.streamlit` folder and `streamlitImage` folder in
@@ -68,7 +69,7 @@ On Windows, make sure to enable `Hidden items` in `File Explorer` by checking th
 
 On macOS, you can reveal hidden files by pressing `Command + Shift + .`.
 
-
+#
 ### 5. Run DeepASL Plus on your computer!
 
 (1) Open the software program `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac).
