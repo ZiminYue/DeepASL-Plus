@@ -46,6 +46,7 @@ cd "<path-to-your-download>/AI-4-Media-Project-Zimin-Yue"
 ```
 (replace `<path-to-your-download>` with the actual path where you downloaded the project)
 
+❗All necessary files, including the model, are included in the repository and will be downloaded automatically when cloning.
 
 ### 3. Install the required libraries
 
