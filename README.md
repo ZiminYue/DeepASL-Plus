@@ -97,4 +97,4 @@ streamlit run "<path-to-your-download>/DeepASL-Plus/DeepASL_Plus/StreamlitAPP/We
 ## Gallery 
 ![Page 1](demo_media/Page1.png)
 ![Page 2](demo_media/Page2.png)
-![The application](demo_media/APP.png)
+![The application](demo_media/App.gif)
