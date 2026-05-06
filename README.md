@@ -1,11 +1,13 @@
 # DeepASL Plus
 ## Description
-DeepASL Plus, developed based on Cesar Almendarez's [DeepASL](https://github.com/cesarealmendarez/DeepASL), is an American Sign Language (ASL) interpretation project powered by Python code, PyTorch-based model, and MediaPipe. It takes input from the webcam video feed and outputs texts and a skeleton-like animation generated from the captured gesture in real-time. Compared to the original project, DeepASL Plus includes several key updates: a new dataset for an expanded vocabulary, a new model for gesture recognition trained using Convolutional Neural Networks (CNNs), and a user interface built with Streamlit.
+DeepASL Plus, developed based on Cesar Almendarez's [DeepASL](https://github.com/cesarealmendarez/DeepASL), is an American Sign Language (ASL) interpretation project powered by Python code, PyTorch-based model, and MediaPipe. It takes input from the webcam video feed and outputs texts and a skeleton-like animation generated from the captured gesture in real-time. 
 
-## Project Video: 
+Compared to the original project, DeepASL Plus includes several key updates: a new dataset for an expanded vocabulary, a new model for gesture recognition trained using Convolutional Neural Networks (CNNs), and a user interface built with Streamlit.
+
+## Project Video 
 [DeepASL Plus Intro (Panapto)](https://ual.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=88dbc0d0-4ecd-476e-81ba-b2a300c59092)
 
-## Setup instructions:
+## Setup instructions
 
 ⚠IMPORTANT: Due to compatibility issues with OpenCV's fullscreen window handling on macOS, the main function of the application could not run successfully during testing on macOS systems. However, you can still view the Streamlit interface on Mac by following the steps below. 
 
