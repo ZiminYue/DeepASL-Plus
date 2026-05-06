@@ -42,7 +42,7 @@ pip install ipython jupyter
 
 (2) Run the following command in your `Anaconda Command Prompt` (on Windows) or `terminal` (on Mac):
 ```
-cd "<path-to-your-download>/AI-4-Media-Project-Zimin-Yue"
+cd "<path-to-your-download>/DeepASL-Plus"
 ```
 (replace `<path-to-your-download>` with the actual path where you downloaded the project)
 
@@ -84,12 +84,12 @@ conda activate aim
 ```
 If the images are not loading correctly, please run:
 ```
-cd "<path-to-your-download>/AI-4-Media-Project-Zimin-Yue-main/DeepASL_Plus/StreamlitAPP/"
+cd "<path-to-your-download>/DeepASL-Plus/DeepASL_Plus/StreamlitAPP/"
 ```
 (replace `<path-to-your-download>` with the actual path where you downloaded the project)
 
 Launch the app:
 ```
-streamlit run "<path-to-your-download>/AI-4-Media-Project-Zimin-Yue/DeepASL_Plus/StreamlitAPP/Welcome_to_DeepASL_Plus_🤟.py"
+streamlit run "<path-to-your-download>/DeepASL-Plus/DeepASL_Plus/StreamlitAPP/Welcome_to_DeepASL_Plus_🤟.py"
 ```
 (replace `<path-to-your-download>` with the actual path where you downloaded the project)
