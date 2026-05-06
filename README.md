@@ -93,3 +93,8 @@ Launch the app:
 streamlit run "<path-to-your-download>/DeepASL-Plus/DeepASL_Plus/StreamlitAPP/Welcome_to_DeepASL_Plus_🤟.py"
 ```
 (replace `<path-to-your-download>` with the actual path where you downloaded the project)
+
+## Gallery 
+![Page 1](demo_media/Page1.png)
+![Page 2](demo_media/Page2.png)
+![The application](demo_media/APP.png)
