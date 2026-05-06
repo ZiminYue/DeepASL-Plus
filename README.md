@@ -1,11 +1,4 @@
-# AI-4-Media-Project-Template (24/25)
-
-Follow the steps in [the project repository setup instructions](https://moodle.arts.ac.uk/mod/page/view.php?id=1374587) on how to setup the repository for your AI 4 Media mini-project.
-
-
-## Student name: Zimin Yue
-## Student number: 24004556
-## Project title: DeepASL Plus
+# Project title: DeepASL Plus
 ## Link to project video recording: https://ual.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=88dbc0d0-4ecd-476e-81ba-b2a300c59092
 
 # Setup instructions:
